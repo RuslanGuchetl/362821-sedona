@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ruslan Guchetl](https://up.htmlacademy.ru/htmlcss/17/user/362821).
-* Наставник: [Марина Удовенко].
+* Наставник: [Марина Удовенко](https://up.htmlacademy.ru/htmlcss/17/user/7570).
 
 ---
 
