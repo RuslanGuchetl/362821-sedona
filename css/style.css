@@ -1,0 +1,78 @@
+body {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+h1 {
+
+}
+
+h2 {
+	font-style: bold;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+h3 {
+	font-style: bold;
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.main-header a {
+	font-style: bold;
+	line-height: 26px;
+	color: #000000;
+}
+
+.city h3,
+.city p {
+	color: #ffffff;
+}
+
+.bridge h3,
+.bridge p {
+	color: #ffffff;
+}
+
+.search-hotel h2 {
+	font-style: bold;
+	font-size: 30px;
+	line-height: 24px;
+	color: #000000;	
+}
+
+.search-hotel p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.inner-settings {
+	color: #ffffff;
+}
+
+.inner-filters h3,
+.item-about h3 {
+	font-style: bold;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;	
+}
+
+.inner-filters p,
+.inner-filters a {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
