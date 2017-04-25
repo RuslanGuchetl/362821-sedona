@@ -11,10 +11,6 @@ p {
 	line-height: 26px;
 }
 
-h1 {
-
-}
-
 h2 {
 	font-style: bold;
 	font-size: 21px;
@@ -76,3 +72,148 @@ h3 {
 }
 
 
+html,
+body {
+	min-width: 1122px;
+	margin: 0;
+	padding: 0;
+	background: #acdee7;
+}
+
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.promo {
+	text-align: center;
+}
+
+.sedona {
+	text-align: center;
+}
+
+.city-content {
+	float: left;
+	width: 400px;
+}
+
+.city img {
+	float: right;
+	width: 800px;
+	height: 256px;
+}
+
+
+.preferences li {
+  float: left;
+
+  /* уменьшил с 400 */
+  width: 380px;
+    
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.bridge img {
+	float: right;
+	width: 800px;
+	height: 256px;
+}
+
+.bridge-content {
+	float: right;
+	width: 400px;
+}
+
+
+.pluses li {
+  float: left;
+
+  /* уменьшил с 400 */
+  width: 380px;
+    
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.footer-hashtag {
+	float: left;
+	width: 400px;
+}
+
+.footer-social {
+	float: left;
+	width: 400px;
+}
+
+.footer-copyright {
+	float: left;
+	width: 400px;
+}
+
+.infrastructure {
+	float: left;
+	width: 240px;
+	margin-left: 73px; 
+
+/* Только для оформления сетки */
+	min-height: 210px;
+}
+
+.house-type {
+	float: left;
+	width: 288px;
+
+/* Только для оформления сетки */
+	min-height: 210px;
+}
+
+.price-range {
+	float: right;
+	width: 400px;
+	/* Только для оформления сетки */
+	min-height: 210px;
+}
+
+.inner-filters {
+	float: left;
+	width: 1056px;
+	margin-left: 73px;
+	margin-right: 73px;
+}
+
+.inner-catalog section{
+	padding: 0 73px;
+}
+
+.item-image {
+	float: left;
+	width: 135px;
+
+	/* Только для оформления сетки */
+	min-height: 90px;
+}
+
+.item-about {
+	float: left;
+	width: 393px;
+
+	/* Только для оформления сетки */
+	min-height: 90px;
+}
+
+.item-rate {
+	float: right;
+	width: 241px;
+
+/* Только для оформления сетки */
+	min-height: 90px;
+}
