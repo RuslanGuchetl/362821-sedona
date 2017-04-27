@@ -92,6 +92,14 @@ body {
 	clear: both;
 }
 
+.main-navigation li {
+	display: inline-block;
+	width: 220px;
+	height: 55px;
+	vertical-align: center;
+	text-align: center;
+}
+
 .promo {
 	text-align: center;
 }
@@ -133,6 +141,15 @@ body {
 	width: 400px;
 }
 
+.inner-filters h3,
+.inner-filters p,
+.inner-filters li, 
+.inner-filters span{
+	display: inline-block;
+	vertical-align: center;
+	margin-right: 33px;
+}
+
 
 .pluses li {
   float: left;
@@ -142,6 +159,10 @@ body {
     
   /* Только для оформления сетки */
   min-height: 330px;
+}
+
+.search-hotel {
+	text-align: center;
 }
 
 .footer-hashtag {
