@@ -141,15 +141,6 @@ body {
 	width: 400px;
 }
 
-.inner-filters h3,
-.inner-filters p,
-.inner-filters li, 
-.inner-filters span{
-	display: inline-block;
-	vertical-align: center;
-	margin-right: 33px;
-}
-
 
 .pluses li {
   float: left;
@@ -183,7 +174,6 @@ body {
 .infrastructure {
 	float: left;
 	width: 240px;
-	margin-left: 73px; 
 
 /* Только для оформления сетки */
 	min-height: 210px;
@@ -204,16 +194,31 @@ body {
 	min-height: 210px;
 }
 
-.inner-filters {
-	float: left;
-	width: 1056px;
-	margin-left: 73px;
-	margin-right: 73px;
-}
-
-.inner-catalog section{
+.inner-padding {
 	padding: 0 73px;
 }
+
+.inner-filters {
+	width: 1056px;
+}
+
+.inner-filters ul,
+.inner-filters ul > li,
+.inner-filters h3,
+.inner-filters p,
+.inner-filters span {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.inner-filters ul {
+	width: 288px;
+}
+
+.inner-filters span {
+	ma
+}
+
 
 .item-image {
 	float: left;
