@@ -1,4 +1,15 @@
+html {
+	min-width: 1122px;
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+}
+
 body {
+	min-width: 1122px;
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
 	font-size: 14px;
 	line-height: 21px;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -97,15 +108,6 @@ h4 {
 	line-height: 18px;
 }
 
-
-html,
-body {
-	min-width: 1122px;
-	margin: 0;
-	padding: 0;
-	background: #f2f2f2;
-}
-
 ul {
 	margin: 0;
 	padding: 0;
@@ -125,18 +127,33 @@ ul {
 	clear: both;
 }
 
+.main-nav-menu {
+	list-style: none;
+}
+
+.main-nav-menu li {
+	float: left;
+	min-width: 128px;
+	margin: 15px 0 15px 0; 
+}
+
+.main-nav-menu li:first-of-type {
+	margin-left: 73px;
+	margin-right: 112px;
+}
+
+.main-nav-menu li:nth-of-type(2) {
+	margin-right: 357px;
+}
+
+.main-nav-menu li:last-of-type {
+	margin-right: 73px;
+	margin-left: 73px;
+	text-align: right;
+}
+
 .main-navigation {
 	position: relative;
-	width: 1200px;
-	height: 55px;
-}
-
-.left-menu {
-	float: left;
-}
-
-.right-menu {
-	float: right;
 }
 
 .logo-href {
@@ -146,26 +163,6 @@ ul {
     margin-left: -68px;
     width: 137px;
     height: 70px;
-}
-
-.left-menu li,
-.right-menu li {
-	display: inline-block;
-	width: 220px;
-	padding-top: 15px;
-	text-align: center;
-}
-
-.left-menu li:last-child {
-	text-align: right;
-	padding-right: 40px;
-	box-sizing: border-box;
-}
-
-.right-menu li:first-child {
-	text-align: left;
-	padding-left: 40px;
-	box-sizing: border-box;
 }
 
 .promo {
@@ -186,18 +183,12 @@ ul {
 }
 
 .sedona h2 {
-	margin: 0 auto;
+	margin: 0;
 	margin-bottom: 39px;
 }
 
 .sedona p {
-	margin: 0 auto;
-}
-
-.city,
-.bridge {
-	width: 1200px;
-	height: 256px;
+	margin: 0;
 }
 
 .city,
@@ -215,13 +206,19 @@ ul {
 
 .feature-title {
 	width: 156px;
-	min-height: 40px;
 	margin: 0 auto;
 }
 
 .feature-descr {
-	width: 310px;
+	width: 302px;
 	margin: 0 auto;
+	text-align: center;
+}
+
+.feature-text {
+	width: 265px;
+	margin: 0 auto;
+	text-align: center;	
 }
 
 .city-content h3,
@@ -341,14 +338,13 @@ ul {
 
 
 .main-footer {
-	min-height: 120px;
+
 }
 
 
 .footer-hashtag {
 	float: left;
 	width: 400px;
-	height: 120px;
 }
 
 .footer-hashtag h2 {
@@ -359,14 +355,12 @@ ul {
 .footer-social {
 	float: left;
 	width: 156px;
-	height: 48px;
 	padding: 36px 120px 0;
 }
 
 .footer-copyright {
 	float: left;
 	width: 400px;
-	height: 120px;
 	text-align: center;
 	vertical-align: center;
 }
@@ -451,7 +445,7 @@ ul {
 
 .index-footer {
 	position: absolute;
-	width: 1200px;
+	min-width: 1200px;
 	z-index: 3;
 	background: rgba(255, 255, 255, 0.9);
 	margin-top: -120px;
@@ -498,8 +492,6 @@ ul {
 .price-range {
 	float: right;
 	width: 400px;
-	/* Только для оформления сетки */
-	min-height: 210px;
 }
 
 .inner-padding {
@@ -529,7 +521,7 @@ ul {
 	color: #000000;
 }
 
-.inner-filters li > a {
+.filter-type a {
 	font-size: 12px;
 	line-height: 18px;
 	margin-right: 34px;
@@ -537,22 +529,20 @@ ul {
 	border-bottom: 1px dotted #81b3d2;
 }
 
-.inner-filters li > a:hover {
+.filter-type a:hover {
 	color: #81b3d2;
 }
 
 
-.inner-filters li > a:active {
+.filter-type a:active {
 	color: #000000;
 	border: none;
 }
 
-.active-filter {
-
+.active-filter a {
+	color: #81b3d2;
+	border: none;
 }
-
-
-
 
 .inner-filters ul,
 .inner-filters ul > li,
@@ -568,18 +558,6 @@ ul {
 .inner-filters span {
 	float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .inner-catalog {
 	background-color: #ffffff;
