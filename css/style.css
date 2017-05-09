@@ -179,7 +179,9 @@ ul {
 }
 
 .sedona h2 {
-	margin: 0;
+	display: inline-block;
+	width: 500px;
+	margin: 0 auto;
 	margin-bottom: 39px;
 }
 
@@ -209,6 +211,7 @@ ul {
 	width: 302px;
 	margin: 0 auto;
 	text-align: center;
+	padding-bottom: 30px; 	
 }
 
 .feature-text {
@@ -326,6 +329,12 @@ ul {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+}
+
+.map {
+	min-height: 593px;
+	background-image: url("../img/map-bg.jpg");
+	background-repeat: no-repeat;
 }
 
 .footer-hashtag {
@@ -461,7 +470,6 @@ ul {
 .house-type label {
 	display: inline-block;
 	min-width: 120px;
-	margin-left: 14px;
 	margin-bottom: 23px;
 	font-size: 14px;
 	line-height: 21px;
@@ -545,6 +553,10 @@ ul {
 	display: inline-block;
 }
 
+.arrows {
+	float: right;
+}
+
 .up {
 	float: right;
 	width: 11px;
@@ -556,7 +568,7 @@ ul {
 }
 
 .up:hover {
-	background-position: -70px -20px;
+	background-position: -71px -20px;
 }
 
 .up:active {
@@ -573,12 +585,12 @@ ul {
 	transform: rotate(180deg);
 }
 
-.down {
-	background-position: -70px -20px;
+.down:hover {
+	background-position: -71px -20px;
 	transform: rotate(180deg);
 }
 
-.down {
+.down:active {
 	background-position: -20px -70px;
 	transform: rotate(180deg);
 }
@@ -586,7 +598,10 @@ ul {
 
 .active-arrow {
 	background-position: -20px -70px;
+	transform: rotate(180deg);
 }
+
+
 
 
 .inner-filters ul {
@@ -604,9 +619,20 @@ ul {
 }
 
 
-.item-name {
+.item-image img {
 	float: left;
-	min-width: 350px;
+	width: 135px;
+	height: 90px;
+}
+
+
+.item-about-title {
+	float: left;
+	min-width: 500px;
+}
+
+
+.item-name {
 	margin: 0;
 	font-weight: bold;
 	font-size: 21px;
@@ -623,11 +649,21 @@ ul {
 	opacity: 0.3;
 }
 
+
+
+.item-about-descr {
+	float: left;
+	width: 500px;
+	margin: 8px 0;
+}
+	
+
 .type-of-house,
 .costs {
 	float: left;
-	margin: 8px 0;
 	min-width: 110px;
+	margin: 0;
+	padding: 0;
 	line-height: 21px;
 	color: #333333;
 }
@@ -636,10 +672,11 @@ ul {
 	margin-right: 6px; 
 }
 
-.costs {
+
+.item-about-btns {
 	float: left;
-	min-width: 110px;
-	margin-right: 100px;
+	min-width: 310px;
+	margin: 0;	
 }
 
 .more {
@@ -706,21 +743,21 @@ ul {
 	float: right;
 	width: 89px;
 	height: 17px;
-	background: url("../img/stars4.png") no-repeat;
+	background: url("../img/stars.png") no-repeat;
 }
 
 .stars3 {
 	float: right;
 	width: 65px;
 	height: 17px;
-	background: url("../img/stars3.png") no-repeat;
+	background: url("../img/stars.png") no-repeat;
 }
 
 .stars2 {
 	float: right;
 	width: 42px;
 	height: 17px;
-	background: url("../img/stars2.png") no-repeat;
+	background: url("../img/stars.png") no-repeat;
 }
 
 
@@ -906,7 +943,6 @@ input[type="checkbox"]:checked + label::before {
 	display: inline-block;
 	width: 109px;
 	margin: 0;
-	margin-bottom: 29px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: bold;
@@ -977,69 +1013,91 @@ input::-webkit-inner-spin-button {
 	margin-right: 53px;
 }
 
-.icon-calend::before {
+.icon-calend-up {
 	content: "";
 	position: absolute;
-	top: -5px;
+	top: 58px;
 	width: 34px;
 	height: 34px;
-	right: -345px;
+	right: 60px;
+	z-index: 20;
 	background-image: url("../img/date-sprite.png");
 	background-repeat: no-repeat;
-	background-position: -20px -77px;
+	background-position: -14px -79px;
 	cursor: pointer;
 }
 
-.icon-calend:hover::before {
-	background-position: -20px 7px;	
+.icon-calend-up:hover {
+	background-position: -14px 5px;	
 }
 
-.icon-calend:active::before {
-	background-position: -20px -35px;	
+.icon-calend-up:active {
+	background-position: -14px -37px;	
 }
 
+.icon-calend-down {
+	content: "";
+	position: absolute;
+	top: 128px;
+	width: 34px;
+	height: 34px;
+	right: 60px;
+	z-index: 20;
+	background-image: url("../img/date-sprite.png");
+	background-repeat: no-repeat;
+	background-position: -14px -79px;
+	cursor: pointer;
+}
+
+.icon-calend-down:hover {
+	background-position: -14px 5px;	
+}
+
+.icon-calend-down:active {
+	background-position: -14px -37px;	
+}
 
 
 .icon-adult-minus {
 	content: "";
 	position: absolute;
-	top: 0px;
+	top: -4px;
 	width: 34px;
 	height: 34px;
-	right: -52px;
+	right: -40px;
 	background-image: url("../img/sprite-plus.png");
 	background-repeat: no-repeat;
-	background-position: -20px 11px;
+	background-position: -7px 15px;
 	cursor: pointer;
 }
 
 .icon-adult-plus {
 	content: "";
 	position: absolute;
-	top: 0px;
+	top: -4px;
 	width: 34px;
 	height: 34px;
-	right: -127px;
+	right: -116px;
 	background-image: url("../img/sprite-plus.png");
 	background-repeat: no-repeat;
-	background-position: -20px -62px;
+	background-position: -7px -57px;
 	cursor: pointer;
 }
 
 .icon-adult-minus:hover {
-	background-position: -20px -12px;	
+	background-position: -7px -8px;	
 }
 
 .icon-adult-minus:active {
-	background-position: -20px -35px;	
+	background-position: -7px -31px;	
 }
 
 .icon-adult-plus:hover {
-	background-position: -20px -93px;
+	background-position: -7px -88px;
 }
 
 .icon-adult-plus:active {
-	background-position: -20px -124px;	
+	background-position: -7px -119px;	
 }
 
 
@@ -1048,43 +1106,43 @@ input::-webkit-inner-spin-button {
 	content: "";
 	position: absolute;
 	z-index: 10;
-	top: 0px;
+	top: -4px;
 	width: 34px;
 	height: 34px;
-	right: -52px;
+	right: -41px;
 	background-image: url("../img/sprite-plus.png");
 	background-repeat: no-repeat;
-	background-position: -20px 11px;
+	background-position: -7px 16px;
 	cursor: pointer;
 }
 
 .plusek {
 	content: "";
 	position: absolute;
-	top: 0px;
+	top: -4px;
 	width: 34px;
 	height: 34px;
-	right: -127px;
+	right: -116px;
 	background-image: url("../img/sprite-plus.png");
 	background-repeat: no-repeat;
-	background-position: -20px -62px;
+	background-position: -7px -57px;
 	cursor: pointer;
 }
 
 .icon-child-minusek:hover {
-	background-position: -20px -12px;	
+	background-position: -7px -7px;	
 }
 
 .icon-child-minusek:active {
-	background-position: -20px -35px;	
+	background-position: -7px -30px;	
 }
 
 .plusek:hover {
-	background-position: -20px -93px;	
+	background-position: -7px -88px;	
 }
 
 .plusek:active {
-	background-position: -20px -124px;	
+	background-position: -7px -119px;	
 }
 
 .find-btn {
