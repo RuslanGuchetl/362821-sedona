@@ -308,6 +308,7 @@ li .feature-descr {
 
 
 .search-hotel {
+	position: relative;
 	padding-top: 58px;
 	text-align: center;
 }
@@ -327,7 +328,6 @@ li .feature-descr {
 }
 
 .search-hotel-btn {
-	position: relative;
 	display: inline-block;
 	padding: 35px 139px;
 	color: #ffffff;
@@ -338,6 +338,7 @@ li .feature-descr {
 }
 
 .map {
+	position: relative;
 	min-height: 593px;
 	background-image: url("../img/map-bg.jpg");
 	background-repeat: no-repeat;
@@ -1190,7 +1191,8 @@ input::-webkit-inner-spin-button {
 
 .modal-content {
   	position: absolute;
-	top: 2224px;
+  	z-index: 7;
+	top: 315px;
 	left: 50%;
 
 	display: none;

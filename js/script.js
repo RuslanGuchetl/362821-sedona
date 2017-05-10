@@ -1,29 +1,32 @@
 var popup = document.querySelector(".modal-content"); 
+var search = popup.querySelector(".find-btn");
 var form = popup.querySelector(".form"); 
-var openClose = document.querySelector(".search-hotel-btn");
-var searchButton = popup.querySelector(".find-btn"); 
-var arrivalDate = popup.querySelector("[name=date-in]");
-var leavingDate = popup.querySelector("[name=date-out]");
-var adult = popup.querySelector("[name=adult]");
-var children = popup.querySelector("[name=child]");
+var open = document.querySelector(".search-hotel-btn"); 
 
+  var arrive = popup.querySelector("[name=date-in]");
+  var leave = popup.querySelector("[name=date-out]");
+  var adult = popup.querySelector("[name=adult]");
+  var children = popup.querySelector("[name=child]");
 
-openClose.addEventListener("click", function(event) { 
-event.preventDefault(); 
-popup.classList.toggle("modal-content-show"); 
+open.addEventListener("click", function(event) { 
+    event.preventDefault(); 
+    popup.classList.toggle("modal-content-show"); 
 }); 
 
-searchButton.addEventListener("click", function(event) { 
-if (!(arrivalDate.value && leavingDate.value && adult.value && children.value)) { 
-event.preventDefault();
-popup.classList.add("modal-error"); 
-}
+search.addEventListener("click", function(event) { 
+    if (!(arrive.value && leave.value && adult.value && child.value)) 
+    { 
+        event.preventDefault();
+        popup.classList.add("modal-error"); 
+    }
 }); 
 
-window.addEventListener("keydown", function(event) { 
-if (event.keyCode == 27) { 
-if (popup.classList.contains("modal-content-show")) { 
-popup.classList.remove("modal-content-show"); 
-} 
-} 
+window.addEventListener("keydown", function(event) 
+{ 
+    if (event.keyCode == 27) { 
+    if (popup.classList.contains("modal-content-show")) 
+      { 
+          popup.classList.remove("modal-content-show"); 
+      } 
+    } 
 });
