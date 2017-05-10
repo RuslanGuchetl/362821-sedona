@@ -167,8 +167,9 @@ ul {
 
 .promo {
 	padding-top: 76px;
-	padding-bottom: 157px;
+	padding-bottom: 81px;
 	background: #e1eef6 url("../img/bg2.jpg") no-repeat center top;
+	background-position: 0px -76px;
 	text-align: center;
 }
 
@@ -211,7 +212,11 @@ ul {
 	width: 302px;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 30px; 	
+	padding-bottom: 55px; 	
+}
+
+li .feature-descr {
+	padding-bottom: 0px; 	
 }
 
 .feature-text {
@@ -240,8 +245,8 @@ ul {
 .preferences li {
 	float: left;
 	width: 400px;
-	padding-top: 60px;
-	padding-bottom: 74px;
+	padding-top: 65px;
+	padding-bottom: 79px;
 	list-style: none;
 	text-align: center; 
 }
@@ -284,8 +289,8 @@ ul {
 	float: left;
 	width: 400px;
 	list-style: none;
-	padding-top: 55px;
-	padding-bottom: 65px;
+	padding-top: 43px;
+	padding-bottom: 52px;
 	text-align: center; 
 }
 
@@ -314,11 +319,11 @@ ul {
 }
 
 .search-hotel h2 {
-	margin-bottom: 35px;
+	margin-bottom: 37px;
 }
 
 .search-hotel p {
-	margin-bottom: 50px;
+	margin-bottom: 52px;
 }
 
 .search-hotel-btn {
@@ -627,7 +632,6 @@ ul {
 
 
 .item-about-title {
-	float: left;
 	min-width: 500px;
 }
 
@@ -649,18 +653,15 @@ ul {
 	opacity: 0.3;
 }
 
-
-
 .item-about-descr {
-	float: left;
-	width: 500px;
+	min-width: 500px;
 	margin: 8px 0;
 }
 	
 
 .type-of-house,
 .costs {
-	float: left;
+	display: inline-block;
 	min-width: 110px;
 	margin: 0;
 	padding: 0;
@@ -674,7 +675,6 @@ ul {
 
 
 .item-about-btns {
-	float: left;
 	min-width: 310px;
 	margin: 0;	
 }
@@ -925,13 +925,51 @@ input[type="checkbox"]:checked + label::before {
 	background-position: -84px -20px;
 }
 
+@keyframes bounce {
+	0%   {
+    	transform: translateY(-2000px);
+  }
+	70%  {
+    transform: translateY(30px);
+  	}
+	90%  {
+    	transform: translateY(-10px);
+	}
+	100% {
+    	transform: translateY(0);
+  	}
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-content-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-content {
 	position: absolute;
-	bottom: 205px;
+	z-index: 5;
+	bottom: -1620px;
 	left: 50%;
 	margin-left: -284px;
 	width: 457px;
 	height: 285px;
+	display: none;
 	padding: 55px 55px;
 	background: #ffffff;
 	color: #000000;
