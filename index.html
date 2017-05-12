@@ -51,18 +51,18 @@
                         <ul class="clearfix">
                             <li>
                                 <img src="img/house.png" width="75" height="72" alt="house">
-                                <h3>Жилье</h3>
-                                <p class="feature-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                                <h3 class="preferences-title">Жилье</h3>
+                                <p class="feature-descr preferences-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                             </li>
                             <li>
                                 <img src="img/food.png" width="74" height="72" alt="food">
-                                <h3>Еда</h3>
-                                <p class="feature-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                                <h3 class="preferences-title">Еда</h3>
+                                <p class="feature-descr preferences-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                             </li>
                             <li>
                                 <img src="img/gift.png" width="64" height="76" alt="gift">
-                                <h3>Сувениры</h3>
-                                <p class="feature-descr">Не только китайского, но и местного производства!</p>
+                                <h3 class="preferences-title">Сувениры</h3>
+                                <p class="feature-descr preferences-text">Не только китайского, но и местного производства!</p>
                             </li>
                         </ul>
                     </div>
@@ -78,18 +78,18 @@
                         <ul class="clearfix">
                             <li>
                                 <h3 class="feature-title">Небольшая площадь</h3>
-                                <p>— №3 —</p>
-                                <p class="feature-text">Все достопримечательности находятся очень близко</p>
+                                <p class="pluses-text">— №3 —</p>
+                                <p class="feature-text pluses-text">Все достопримечательности находятся очень близко</p>
                             </li>
                             <li>
                                 <h3 class="feature-title">Красивая дорога</h3>
-                                <p>— №4 —</p>
-                                <p class="feature-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                                <p  class="pluses-text">— №4 —</p>
+                                <p class="feature-text pluses-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                             </li>
                             <li>
                                 <h3 class="feature-title">Мало туристов</h3>
-                                <p>— №5 —</p>
-                                <p class="feature-text">Большинство едет в Гранд Каньон и толпится там</p>
+                                <p  class="pluses-text">— №5 —</p>
+                                <p class="feature-text pluses-text">Большинство едет в Гранд Каньон и толпится там</p>
                             </li>
                         </ul>
                     </div>
@@ -102,18 +102,18 @@
                             <form class="search-for-hotel" action="https://echo.htmlacademy.ru" method="post">
                                 <label for="date-in">Дата заезда:</label>
                                 <input type="text" name="date-in" id="date-in" placeholder="24 АПРЕЛЯ 2017" required>
-                                <a href="#" class="icon-calend-up"></a>
+                                <a href="#" class="icon-calend-up">Календарь даты заезда</a>
                                 <label for="date-out">Дата выезда:</label>
                                 <input type="text" name="date-out" id="date-out" placeholder="4 ИЮЛЯ 2017" required>
-                                <a href="#" class="icon-calend-down"></a>
+                                <a href="#" class="icon-calend-down">Календарь даты выезда</a>
                                 <label for="adult">Взрослые:
-                                <a href="#" class="icon-adult-minus"></a>
-                                <a href="#" class="icon-adult-plus"></a>
+                                <a href="#" class="icon-adult-minus">Уменьшить количество взрослых</a>
+                                <a href="#" class="icon-adult-plus">Увеличить количество взрослых</a>
                                 </label>
                                 <input type="number" name="adult" id="adult" min="1" max="999" value="2">
                                 <label for="child">Дети:
-                                <a href="#" class="icon-child-minusek"></a>
-                                <a href="#" class="plusek"></a>
+                                <a href="#" class="number-minus">Уменьшить количество детей</a>
+                                <a href="#" class="number-plus">Увеличить количество детей</a>
                                 </label>
                                 <input type="number" name="child" id="child" min="0" max="999" value="0">
                                 <button class="find-btn" type="submit">Найти</button>
@@ -128,7 +128,7 @@
             <footer class="main-footer index-footer">
                 <div class="clearfix">
                     <section class="footer-hashtag">
-                        <h2>#VISITSEDONA</h2>
+                        <p class="hashtag">#VISITSEDONA</p>
                     </section>
                     <section class="footer-social">
                         <a class="social-btn social-btn-tw" href="#">Вконтакте</a>
@@ -136,7 +136,7 @@
                         <a class="social-btn social-btn-yt" href="#">Инстаграм</a>
                     </section>
                     <section class="footer-copyright">
-                        <p>Website by</p>
+                        <span>Website by</span>
                         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
                     </section>
                 </div>

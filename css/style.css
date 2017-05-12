@@ -15,35 +15,35 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     color: #333333;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-p {
+.container p,
+.main-footer p {
     font-size: 14px;
     line-height: 26px;
 }
 
-a {
+.container a,
+.main-footer a {
     text-decoration: none;
 }
 
-h2 {
+.sedona h2,
+.search-hotel h2 {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
 }
 
-h3 {
+.city h3,
+.preferences h3,
+.bridge h3,
+.pluses h3 {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
-}
-
-h4 {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    color: #ffffff;
 }
 
 .main-header {
@@ -55,6 +55,7 @@ h4 {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    text-decoration: none;
 }
 
 .main-header a:hover {
@@ -65,7 +66,9 @@ h4 {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.active a {
+.active a,
+.active a:hover,
+.active a:active {
     color: #766357;
 }
 
@@ -82,7 +85,7 @@ h4 {
 .search-hotel h2 {
     font-weight: bold;
     font-size: 30px;
-    line-height: 24px;
+    line-height: 30px;
     color: #000000;
 }
 
@@ -109,7 +112,10 @@ h4 {
     line-height: 18px;
 }
 
-ul {
+.preferences ul,
+.main-nav-menu,
+.pluses ul,
+.filter-type {
     margin: 0;
     padding: 0;
 }
@@ -129,6 +135,7 @@ ul {
 
 .main-nav-menu {
     list-style: none;
+    padding: 0 71px 0 71px;
 }
 
 .main-nav-menu li {
@@ -138,7 +145,6 @@ ul {
 }
 
 .main-nav-menu li:first-of-type {
-    margin-left: 71px;
     margin-right: 113px;
 }
 
@@ -147,7 +153,6 @@ ul {
 }
 
 .main-nav-menu li:last-of-type {
-    margin-right: 71px;
     margin-left: 75px;
     text-align: right;
 }
@@ -262,8 +267,8 @@ li .feature-descr {
     padding-top: 56px;
 }
 
-.preferences li > h3,
-.preferences li > p {
+.preferences .preferences-title,
+.preferences .preferences-text {
     line-height: 21px;
     margin-top: 23px;
 }
@@ -312,19 +317,19 @@ li .feature-descr {
     text-align: center;
 }
 
-.pluses li > p {
+.pluses .pluses-text {
     margin-top: 0;
     margin-bottom: 22px;
     line-height: 21px;
 }
 
-.pluses li > p:last-of-type {
+.pluses-text:last-child {
     margin-bottom: 0;
 }
 
 .search-hotel {
     position: relative;
-    padding-top: 58px;
+    padding-top: 54px;
     text-align: center;
 }
 
@@ -335,11 +340,11 @@ li .feature-descr {
 }
 
 .search-hotel h2 {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .search-hotel p:last-of-type {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
 }
 
 .search-hotel-btn {
@@ -364,15 +369,19 @@ li .feature-descr {
     width: 400px;
 }
 
-.footer-hashtag h2 {
+.footer-hashtag .hashtag {
     margin-top: 47px;
     text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .footer-social {
     float: left;
-    min-width: 150px;
-    padding: 36px 125px 36px 124.5px;
+    width: 151px;
+    padding: 36px 124px 36px 124px;
 }
 
 .footer-copyright {
@@ -462,6 +471,7 @@ li .feature-descr {
 .footer-copyright a {
     margin-top: 41px;
     margin-bottom: 41px;
+    margin-left: 5px;
     vertical-align: middle;
 }
 
@@ -479,12 +489,24 @@ li .feature-descr {
 
 .inner-settings form {
     padding-top: 28px;
-    padding-bottom: 28.7px;
+    padding-bottom: 28px;
 }
 
-.infrastructure h4,
-.house-type h4 {
+.inner-settings .inner-settings-title {
     margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.inner-filters .inner-filters-title {
+    margin-right: 42px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
 }
 
 .infrastructure label,
@@ -564,10 +586,10 @@ li .feature-descr {
     border: none;
 }
 
-.inner-filters ul,
-.inner-filters ul > li,
-.inner-filters h3,
-.inner-filters p {
+.inner-filters-title,
+.inner-filters-text,
+.filter-type,
+.filter-type li {
     display: inline-block;
 }
 
@@ -581,6 +603,9 @@ li .feature-descr {
     height: 10px;
     margin-right: 12px;
     margin-top: 10px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background: url("../img/arrows.png") no-repeat;
     background-position: -20px -20px;
 }
@@ -598,24 +623,45 @@ li .feature-descr {
     width: 11px;
     height: 10px;
     margin-top: 9px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background: url("../img/arrows.png") no-repeat;
     background-position: -20px -20px;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 }
 
 .down:hover {
     background-position: -71px -20px;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 }
 
 .down:active {
     background-position: -20px -70px;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 }
 
-.active-arrow {
+.active-arrow,
+.active-arrow:hover,
+.active-arrow:active {
     background-position: -20px -70px;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 }
 
 .inner-filters ul {
@@ -668,8 +714,8 @@ li .feature-descr {
     line-height: 14px;
 }
 
-.type-of-house,
-.costs {
+.item-about-descr .type-of-house,
+.item-about-descr .costs {
     display: inline-block;
     min-width: 110px;
     margin: 0;
@@ -750,6 +796,9 @@ li .feature-descr {
     float: right;
     width: 89px;
     height: 17px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background: url("../img/stars.png") no-repeat;
 }
 
@@ -757,6 +806,9 @@ li .feature-descr {
     float: right;
     width: 65px;
     height: 17px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background: url("../img/stars.png") no-repeat;
 }
 
@@ -764,6 +816,9 @@ li .feature-descr {
     float: right;
     width: 42px;
     height: 17px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background: url("../img/stars.png") no-repeat;
 }
 
@@ -811,6 +866,10 @@ li .feature-descr {
     height: 22px;
     background: #ffffff;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -910,6 +969,11 @@ input[type="checkbox"] + label {
     cursor: pointer;
 }
 
+input[type="checkbox"]:disabled + label {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
@@ -989,23 +1053,31 @@ input[type="checkbox"]:checked + label::before {
 
 .search-for-hotel input[type="text"]::-webkit-input-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 .search-for-hotel input[type="text"]::-moz-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 .search-for-hotel input[type="text"]:-moz-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 .search-for-hotel input[type="text"]:-ms-input-placeholder {
     color: #000000;
+    opacity: 1;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
+    appearance: none;
     -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
     margin: 0;
 }
 
@@ -1021,6 +1093,9 @@ input::-webkit-inner-spin-button {
     height: 34px;
     right: 60px;
     z-index: 20;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url("../img/date-sprite.png");
     background-repeat: no-repeat;
     background-position: -14px -79px;
@@ -1043,6 +1118,9 @@ input::-webkit-inner-spin-button {
     height: 34px;
     right: 60px;
     z-index: 20;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url("../img/date-sprite.png");
     background-repeat: no-repeat;
     background-position: -14px -79px;
@@ -1064,6 +1142,9 @@ input::-webkit-inner-spin-button {
     width: 34px;
     height: 34px;
     right: -40px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url("../img/sprite-plus.png");
     background-repeat: no-repeat;
     background-position: -7px 15px;
@@ -1077,6 +1158,9 @@ input::-webkit-inner-spin-button {
     width: 34px;
     height: 34px;
     right: -116px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url("../img/sprite-plus.png");
     background-repeat: no-repeat;
     background-position: -7px -57px;
@@ -1099,7 +1183,7 @@ input::-webkit-inner-spin-button {
     background-position: -7px -119px;
 }
 
-.icon-child-minusek {
+.number-minus {
     content: "";
     position: absolute;
     z-index: 10;
@@ -1107,38 +1191,44 @@ input::-webkit-inner-spin-button {
     width: 34px;
     height: 34px;
     right: -41px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url("../img/sprite-plus.png");
     background-repeat: no-repeat;
     background-position: -7px 16px;
     cursor: pointer;
 }
 
-.plusek {
+.number-plus {
     content: "";
     position: absolute;
     top: -4px;
     width: 34px;
     height: 34px;
     right: -116px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url("../img/sprite-plus.png");
     background-repeat: no-repeat;
     background-position: -7px -57px;
     cursor: pointer;
 }
 
-.icon-child-minusek:hover {
+.number-minus:hover {
     background-position: -7px -7px;
 }
 
-.icon-child-minusek:active {
+.number-minus:active {
     background-position: -7px -30px;
 }
 
-.plusek:hover {
+.number-plus:hover {
     background-position: -7px -88px;
 }
 
-.plusek:active {
+.number-plus:active {
     background-position: -7px -119px;
 }
 
@@ -1171,32 +1261,60 @@ input::-webkit-inner-spin-button {
 @keyframes bounce {
     0% {
         transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
     }
 
     70% {
         transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+        -moz-transform: translateY(30px);
     }
 
     90% {
         transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
     }
 
     100% {
         transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        -moz-transform: translateY(0);
     }
 }
 
 @keyframes shake {
     0%, 100% {
         transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        -moz-transform: translateX(0);
     }
 
     10%, 30%, 50%, 70%, 90% {
         transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
     }
 
     20%, 40%, 60%, 80% {
         transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+        -moz-transform: translateX(10px);
     }
 }
 
