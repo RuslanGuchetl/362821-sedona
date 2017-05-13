@@ -1085,6 +1085,22 @@ input::-webkit-inner-spin-button {
     margin-right: 53px;
 }
 
+.search-for-hotel input[name="date-in"] {
+    min-height: 35px;
+}
+
+.search-for-hotel input[name="date-out"] {
+    min-height: 35px;
+}
+
+.search-for-hotel input[name="adult"] {
+    min-height: 35px;
+}
+
+.search-for-hotel input[name="child"] {
+    min-height: 35px;
+}
+
 .icon-calend-up {
     content: "";
     position: absolute;
