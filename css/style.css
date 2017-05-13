@@ -1086,19 +1086,19 @@ input::-webkit-inner-spin-button {
 }
 
 .search-for-hotel input[name="date-in"] {
-    min-height: 35px;
+    min-height: 34px;
 }
 
 .search-for-hotel input[name="date-out"] {
-    min-height: 35px;
+    min-height: 34px;
 }
 
 .search-for-hotel input[name="adult"] {
-    min-height: 35px;
+    min-height: 34px;
 }
 
 .search-for-hotel input[name="child"] {
-    min-height: 35px;
+    min-height: 34px;
 }
 
 .icon-calend-up {
